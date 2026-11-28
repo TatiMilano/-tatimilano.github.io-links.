@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Tati Milano | Terapias e Oráculos</title>
-<meta name="description" content="Tati Milano, terapeuta integrativa. Jornada do Sentir, acompanhamento semanal exclusivo para mulheres, e leitura de baralho cigano, aberta a todos.">
+<meta name="description" content="Tati Milano, terapeuta integrativa. Jornada do Sentir, acompanhamento semanal exclusivo para mulheres, e leitura oracular, aberta a todos.">
 <meta property="og:title" content="Tati Milano | Terapias e Oráculos">
-<meta property="og:description" content="Jornada do Sentir e leitura de baralho cigano.">
+<meta property="og:description" content="Jornada do Sentir e leitura oracular.">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Anek+Latin:wght@400;500;600&display=swap">
 
@@ -34,7 +34,7 @@ var CONFIG = {
   /* ---------- VALORES ---------- */
   jornada_pix: "R$ 560",                     /* 4 sessões no Pix */
   jornada_link: "R$ 600",                    /* 4 sessões no link de pagamento */
-  leitura_pix: "R$ 150",                     /* leitura de baralho cigano no Pix */
+  leitura_pix: "R$ 150",                     /* leitura oracular no Pix */
 
   /* ---------- CHAMADA DO TESTE ---------- */
   chamada_teste: "Faça o teste e receba um direcionamento para o momento que você vive.",
@@ -47,14 +47,14 @@ var CONFIG = {
      `Não. Eu complemento o cuidado que você já tem, nunca o substituo. Se você faz terapia, acompanhamento psiquiátrico ou usa medicação, siga como está. E, quando algo pede esse cuidado, eu encaminho.`],
     [`O que é a Jornada do Sentir?`,
      `É um acompanhamento integrativo semanal, exclusivo para mulheres, em sessões terapêuticas de 1 hora, online, por chamada de vídeo. Você chega com o que quiser olhar naquele dia, e o que traz define como a sessão será conduzida. Com o tempo, você aprende a se ouvir antes de decidir.`],
-    [`Qual a diferença entre a Jornada e a leitura de baralho cigano?`,
-     `<ul><li><b>Jornada do Sentir:</b> um acompanhamento semanal, para se aproximar de si ao longo do tempo.</li><li><b>Leitura oracular de baralho cigano:</b> um encontro pontual, para olhar uma questão do momento de outro jeito e também se observar nela.</li></ul>`],
+    [`Qual a diferença entre a Jornada e a leitura oracular?`,
+     `<ul><li><b>Jornada do Sentir:</b> um acompanhamento semanal, para se aproximar de si ao longo do tempo.</li><li><b>Leitura oracular:</b> um encontro pontual, para olhar uma questão do momento de outro jeito e também se observar nela.</li></ul>`],
     [`Para quem é a Jornada? E a leitura?`,
      `A Jornada é para a mulher que sente que vive no automático e quer entender o que, nessa vida, é dela de verdade. É exclusiva para mulheres. A leitura é aberta a qualquer pessoa que tenha uma situação, uma dúvida ou uma decisão para olhar com mais clareza.`],
-    [`Como funciona a leitura de baralho cigano?`,
+    [`Como funciona a leitura oracular?`,
      `É uma chamada de vídeo de 1 hora, e você sai com uma orientação clara para a sua situação. O passo a passo está na seção da leitura.`],
     [`Qual é o objetivo da leitura? E o que ela não faz?`,
-     `Ajudar você a olhar uma situação com mais clareza e a perceber o que pode fazer com ela. Não é sentença nem resposta certa: o que as cartas mostram pode mudar com as suas escolhas, e a decisão é sempre sua. Também não substitui orientação médica, psicológica ou jurídica.`],
+     `Ajudar você a olhar uma situação com mais clareza e a perceber o que pode fazer com ela. Não é sentença nem resposta certa: o que o oráculo mostra pode mudar com as suas escolhas, e a decisão é sempre sua. Também não substitui orientação médica, psicológica ou jurídica.`],
     [`Quanto custa e como pago?`,
      `A leitura custa {{leitura_pix}} no Pix. No link de pagamento, há acréscimo da taxa da operadora. Na Jornada, o valor é por 4 sessões semanais de 1 hora: {{jornada_pix}} no Pix ou {{jornada_link}} no link, mais a taxa da operadora se parcelar. Depois você continua de 4 em 4 sessões, pelo tempo que quiser.`],
     [`Como eu agendo?`,
@@ -128,6 +128,12 @@ nav.menu{display:flex;gap:.4rem .9rem;flex-wrap:wrap;justify-content:center;marg
 nav.menu a{text-decoration:none;color:var(--ink);font-weight:500}
 nav.menu a:hover{color:var(--terra)}
 
+.redes-t{margin:1.8rem 0 .2rem;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.redes{margin-top:.6rem}
+.redes .btn{padding:.6rem 1.3rem;font-size:.95rem}
+.depo-sub{font-size:1.25rem;margin:1.8rem 0 .9rem}
+.depo.curto{padding:1rem 1.25rem}
+.depo.curto p{margin:0;font-family:var(--display);font-size:1.08rem;line-height:1.5}
 /* botões */
 .btn{display:inline-block;background:var(--terra);color:var(--on-accent);text-decoration:none;font:inherit;font-weight:600;padding:.85rem 1.5rem;border-radius:999px;border:0;cursor:pointer;line-height:1.3}
 .btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
@@ -175,6 +181,10 @@ section h2,footer h2{font-size:clamp(1.55rem,6vw,2rem);margin-bottom:.9rem}
 .price h3{font-size:1.5rem;margin-bottom:.6rem}
 .price p{font-size:1rem}
 .price .val{font-family:var(--display);font-size:1.55rem;line-height:1.25;color:var(--terra);margin:.2rem 0 .8rem}
+.vals{display:flex;flex-wrap:wrap;gap:.2rem 2.2rem;margin:.4rem 0 .6rem}
+.vals .val{margin:0}
+.vals .val em{display:block;font-family:var(--text,inherit);font-style:normal;font-size:.9rem;color:var(--muted);margin-top:.1rem}
+.price small.sub{margin-bottom:.9rem}
 .price small{display:block;color:var(--muted);font-size:.9rem;line-height:1.55}
 
 /* recolhíveis */
@@ -184,6 +194,13 @@ details.more>summary::-webkit-details-marker{display:none}
 details.more>summary::after{content:"  +"}
 details.more[open]>summary::after{content:"  \2212"}
 details.more[open]>summary{margin-bottom:1.4rem}
+.price details.more.pay{margin-top:.4rem}
+.price details.more.pay>summary{padding:.6rem 1rem;font-size:.88rem;white-space:nowrap}
+@media(max-width:359px){.price details.more.pay>summary{white-space:normal}}
+.price details.more.pay>summary::after{content:"\00a0\00a0+"}
+.price details.more.pay[open]>summary::after{content:"\00a0\00a0\2212"}
+.price details.more.pay[open]>summary{margin-bottom:1rem}
+.price details.more.pay p{font-size:.92rem;color:var(--muted);line-height:1.55}
 details.small{margin-top:2.2rem;font-size:.9rem;color:var(--muted)}
 details.small summary{cursor:pointer;font-weight:600;color:var(--ink)}
 details.small ul{padding-left:1.1rem;margin:.6rem 0}
@@ -231,7 +248,7 @@ details.small li{margin-bottom:.4rem}
 .rcard h3{font-size:1.3rem;margin-bottom:.4rem}
 .rcard p{font-size:.97rem;color:var(--muted)}
 
-footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
+footer{border-top:1px solid var(--line);margin-top:2.2rem;padding-top:2.2rem}
 .num{margin:.8rem 0 0;color:var(--muted);font-size:.95rem}
 .erro{background:#fff3cd;color:#5a4300;border:1px solid #e0c36a;border-radius:10px;padding:.9rem 1rem;margin:1rem 0;font-size:.95rem}
 .social{margin-top:1.4rem;font-size:.95rem;color:var(--muted)}
@@ -313,9 +330,9 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
           <a class="btn ghost" href="#jornada">Conhecer a Jornada</a>
         </div>
         <div class="rcard" id="rc-l">
-          <h3>Oráculos e baralho cigano</h3>
+          <h3>Leitura oracular</h3>
           <p>Para quem tem uma situação ou uma decisão agora e quer entendê-la melhor. Aberta a qualquer pessoa.</p>
-          <a class="btn ghost" href="#leitura">Conhecer os oráculos</a>
+          <a class="btn ghost" href="#leitura">Conhecer a leitura</a>
         </div>
       </div>
       <div class="note" style="margin-top:0">Isto é só uma sugestão, feita a partir das suas respostas. Não é um diagnóstico nem um veredito.</div>
@@ -328,8 +345,8 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
 <!-- ============ JORNADA ============ -->
 <section id="jornada">
   <div class="eyebrow">Só para mulheres</div>
-  <h2>O que é a <em>Jornada</em></h2>
-  <p>A Jornada do Sentir é um acompanhamento integrativo para a mulher que, muitas vezes sem perceber, foi se afastando de si. Aqui, ela volta a se escutar e a se reconhecer pelo próprio olhar, retomando o protagonismo da própria vida. O meu trabalho é ajudá-la a separar o que partiu dela do que veio de fora, para que ela pense, aja e decida a partir do que faz sentido para ela mesma. Ela pode chegar por uma decisão no trabalho, no amor ou no propósito, mas ninguém recebe uma resposta pronta: a resposta é construída a partir dela.</p>
+  <h2>O que é a <em>Jornada do Sentir</em></h2>
+  <p>A Jornada é um acompanhamento integrativo para a mulher que, muitas vezes sem perceber, foi se afastando de si. Aqui, ela volta a se escutar e a se reconhecer pelo próprio olhar, retomando o protagonismo da própria vida. O meu trabalho é ajudá-la a separar o que partiu dela do que veio de fora, para que ela pense, aja e decida a partir do que faz sentido para ela mesma. Ela pode chegar por uma decisão no trabalho, no amor ou no propósito, mas ninguém recebe uma resposta pronta: a resposta é construída a partir dela.</p>
   <p>Para isso, eu reúno diversos olhares: o conhecimento do corpo e da fisiologia que vem da fisioterapia, as práticas holísticas, os oráculos, a minha vivência e a minha espiritualidade. A cada sessão, escolho o que usar a partir do que ela traz. Assim, a sessão de uma mulher nunca é igual à de outra: são vidas, demandas e jeitos de se acessar diferentes. Cada uma tem o acompanhamento voltado para o que precisa e para como precisa se reconhecer e se reconectar consigo.</p>
   <p>Os encontros são semanais, de 1 hora, por vídeo e só para mulheres. A cada encontro, ela traz o que quer olhar: um questionamento, uma situação, um sentir. Desde que ela chega, eu a observo, e o que ela me traz guia a sessão. É a partir disso que eu escolho como conduzir aquele momento e explorar o tema com ela, trazendo novos olhares. É um espaço em que nada é certo ou errado: ela pode rever, com calma, o que aprendeu a tratar como verdade.</p>
   <p>Com o tempo, é comum que a mulher aprenda a identificar o que sente, a levar isso para o dia a dia e a ganhar clareza sobre quem é, e que passe a se escolher mais, a se colocar como prioridade na vida e a olhar com outros olhos o que antes aceitava por costume.</p>
@@ -356,9 +373,15 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
   <div class="price">
     <h3>Jornada do Sentir</h3>
     <p>Sessões de acompanhamento semanais, com 1 hora de duração.</p>
-    <p>Valor de 4 sessões: <b><span data-c="jornada_pix">R$ 560</span> no Pix</b> ou <b><span data-c="jornada_link">R$ 600</span> no link</b>, mais a taxa da operadora se parcelar.</p>
-    <p>O acompanhamento se renova a cada 4 sessões, pelo tempo que você quiser.</p>
-    <small>O pagamento é feito no primeiro dia de cada conjunto de 4 sessões e se renova ao final dele, enquanto a mulher quiser. Faltas avisadas com 24 horas de antecedência podem ser repostas dentro desse conjunto, e a reposição não passa para o seguinte. Faltas avisadas com menos de 24 horas, ou sem aviso, são consideradas sessão realizada.</small>
+    <div class="vals">
+      <div class="val"><span data-c="jornada_pix">R$ 560</span><em>no Pix</em></div>
+      <div class="val"><span data-c="jornada_link">R$ 600</span><em>no link</em></div>
+    </div>
+    <small class="sub">Valor por 4 sessões, mais a taxa da operadora se parcelar.</small>
+    <details class="more pay">
+      <summary>Como funciona o ciclo de pagamento</summary>
+      <p>O pagamento começa sempre na primeira sessão e se renova ao final da 4ª sessão, para o próximo ciclo, até quando a mulher quiser.</p>
+    </details>
   </div>
   <div class="cta-row"><a class="btn" data-wa href="https://wa.me/5511966267673" rel="noopener">Quero conversar sobre a Jornada</a></div>
 </section>
@@ -366,11 +389,13 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
 <!-- ============ LEITURA ============ -->
 <section id="leitura">
   <div class="eyebrow">Aberta a qualquer pessoa</div>
-  <h2>Oráculos e <em>baralho cigano</em></h2>
-  <p>Uma leitura de baralho cigano é um encontro para olhar uma situação da sua vida por outros ângulos. Eu uso as cartas como uma lente: elas mostram um cenário e abrem perguntas que, muitas vezes, você ainda não tinha feito.</p>
+  <h2>Leitura <em>oracular</em></h2>
+  <p>Uma leitura oracular é um encontro para olhar uma situação da sua vida por outros ângulos. Eu uso o oráculo como uma lente: ele mostra um cenário e abre perguntas que, muitas vezes, você ainda não tinha feito.</p>
+  <p>Eu trabalho com diferentes oráculos: o tarô, o baralho cigano, o oráculo de palavras e figuras da Terapia Integral, em que você explora o que aquela imagem diz de você, e oráculos de mensagem, como o oráculo do pão. Em breve, vai existir também o meu próprio oráculo.</p>
+  <p class="quote">O oráculo de que eu mais gosto hoje é o baralho cigano.</p>
   <p>No baralho cigano, o que uma carta quer dizer depende das cartas ao redor e da sua situação. Por isso eu não leio carta por carta como num dicionário: leio o conjunto, junto com a sua história.</p>
   <p>A leitura não serve só para saber sim ou não. Ela ajuda a olhar a situação de outro jeito, a se perceber nela e a notar o que você pode fazer com isso.</p>
-  <p><b>O que a leitura não faz.</b> Ela não é uma sentença nem uma resposta definitiva. As cartas mostram possibilidades, não algo fixo: o que aparece pode não acontecer exatamente daquele jeito, e os caminhos podem mudar conforme as suas escolhas. A decisão e os caminhos são seus.</p>
+  <p><b>O que a leitura não faz.</b> Ela não é uma sentença nem uma resposta definitiva. O oráculo mostra possibilidades, não algo fixo: o que aparece pode não acontecer exatamente daquele jeito, e os caminhos podem mudar conforme as suas escolhas. A decisão e os caminhos são seus.</p>
 
   <h3 style="font-size:1.5rem;margin:2rem 0 .8rem">Como a leitura oracular <em>acontece</em></h3>
   <p>A leitura é uma chamada de vídeo de 1 hora. Antes de abrir a chamada, eu tiro cartas para entender o assunto que vai chegar. Quando você entra, eu escuto a sua história. Depois pergunto o que você quer saber de verdade, porque muitas vezes a pergunta que a gente traz não é a que importa.</p>
@@ -388,10 +413,14 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
 
   <h3 style="font-size:1.5rem;margin:2rem 0 .8rem">Valor da leitura <em>oracular</em></h3>
   <div class="price">
-    <h3>Leitura oracular de baralho cigano</h3>
-    <p>Uma hora de conversa por vídeo, com as cartas e a orientação final.</p>
+    <h3>Leitura oracular</h3>
+    <p>Uma hora de conversa por vídeo, com o oráculo e a orientação final.</p>
     <div class="val"><span data-c="leitura_pix">R$ 150</span></div>
     <small>no Pix. No link, com a taxa da operadora.</small>
+    <details class="more pay">
+      <summary>Como funciona o pagamento</summary>
+      <p>O pagamento é feito no ato do agendamento, antes do dia da sessão.</p>
+    </details>
   </div>
   <p style="margin-top:1.4rem">Se você sentir que quer se escutar mais a fundo, existe a <a href="#jornada">Jornada do Sentir</a>, um acompanhamento semanal só para mulheres. É um serviço à parte.</p>
   <div class="cta-row"><a class="btn" data-wa href="https://wa.me/5511966267673" rel="noopener">Quero uma leitura oracular</a></div>
@@ -400,7 +429,7 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
 <!-- ============ RELATOS ============ -->
 <section id="relatos">
   <h2>O que dizem sobre o <em>meu trabalho</em></h2>
-  <p class="depo-nota">Relatos pessoais. Cada pessoa vive a Jornada do seu jeito.</p>
+  <p class="depo-nota">Relatos pessoais de quem passou por atendimentos comigo. Cada pessoa vive o processo do seu jeito.</p>
 
   <blockquote class="depo" style="margin-inline:0">
     <p class="q">O que me fez ser cliente da Tati</p>
@@ -425,6 +454,12 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
     <p>Eu sou uma cliente, paciente assistida, assídua da Tati, e confio demasiadamente no trabalho dela. Sigo todas as orientações porque eu tive excelentes resultados em muitas questões, em muitos aspectos da minha vida, desde que eu comecei a me tratar com ela.</p>
     </details>
   </blockquote>
+
+  <h3 class="depo-sub">Em poucas palavras</h3>
+  <blockquote class="depo curto" style="margin-inline:0"><p>“Seu trabalho é lindo! Me ajudou demais e em breve volto pra te contar as novidades!”</p></blockquote>
+  <blockquote class="depo curto" style="margin-inline:0"><p>“Deu sim, muito direcionamento em todos os aspectos. Gratidão pela disponibilidade. É bom saber que agora tenho um contato de confiança pra isso, sério. Foi muito assertivo em muitos pontos.”</p></blockquote>
+  <blockquote class="depo curto" style="margin-inline:0"><p>“Pra mim essa consulta com você é essencial pra me guiar pela vida.”</p></blockquote>
+  <blockquote class="depo curto" style="margin-inline:0"><p>“Quero te agradecer pela tiragem e por tudo que você falou.”</p></blockquote>
   <a class="btn ghost" data-wa-dep href="https://wa.me/5511966267673" rel="noopener">Enviar meu depoimento</a>
 </section>
 
@@ -440,6 +475,8 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
   <p>Me chama e conta o que você está buscando. Eu te digo qual formato faz sentido.</p>
   <div class="cta-row"><a class="btn" data-wa href="https://wa.me/5511966267673" rel="noopener">Chamar no WhatsApp</a></div>
   <p class="num">WhatsApp: <span data-c="whatsapp_exibido">(11) 96626-7673</span></p>
+  <p class="redes-t">Me acompanhe também</p>
+  <div class="cta-row redes"><a class="btn ghost" href="https://www.instagram.com/tatiane.milano/" target="_blank" rel="noopener">Instagram</a><a class="btn ghost" href="https://www.tiktok.com/@tati.milano3" target="_blank" rel="noopener">TikTok</a></div>
   <div class="note">Não dou diagnósticos, não curo e não trato transtornos psicológicos. Não substituo psicólogo, psiquiatra ou médico, e quando o sofrimento pede esse acompanhamento, eu encaminho.</div>
 
   <details class="small">
@@ -524,10 +561,10 @@ footer{border-top:2px dotted var(--gold);margin-top:2.2rem;padding-top:2.2rem}
     function mark(c){c.classList.add('sug');var s=document.createElement('span');s.className='badge2';s.textContent='Sugestão para agora';c.insertBefore(s,c.firstChild)}
     if(j>l){
       $('r-title').textContent='Pelo que você respondeu, a Jornada do Sentir parece o caminho mais próximo agora.';
-      $('r-text').textContent='A Jornada é um acompanhamento exclusivo para mulheres. A leitura de baralho cigano continua aberta a qualquer pessoa.';
+      $('r-text').textContent='A Jornada é um acompanhamento exclusivo para mulheres. A leitura oracular continua aberta a qualquer pessoa.';
       mark(cj);
     }else if(l>j){
-      $('r-title').textContent='Pelo que você respondeu, a leitura de baralho cigano parece o caminho mais próximo agora.';
+      $('r-title').textContent='Pelo que você respondeu, a leitura oracular parece o caminho mais próximo agora.';
       $('r-text').textContent='Ela serve para olhar uma situação específica. Se mais para frente você quiser se aprofundar, a Jornada também está aqui, e é exclusiva para mulheres.';
       mark(cl);
     }else{
